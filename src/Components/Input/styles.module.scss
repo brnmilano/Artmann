@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  background: none;
+}
+
+.container label {
+  margin-bottom: 10px;
+}
+
+.container input {
+  border-width: 0;
+}
+
+.container input::placeholder {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.container input:focus-visible {
+  outline: 0px;
+}
