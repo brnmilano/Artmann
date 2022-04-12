@@ -3,16 +3,19 @@ import Button from "../Button";
 import Input from "../Input";
 import Text from "../Text";
 import styles from "./styles.module.scss";
+import useIsMobile from "../../helpers/useIsMobile";
 
 export default function Register() {
+  const isMobile = useIsMobile({ size: 950 });
+
   return (
     <Box className={styles.container}>
       <Box className={styles.contentWrapper}>
         <Box className={styles.textWrapper}>
-          <Text fontSize={40}>
+          <Text fontSize={isMobile ? 25 : 40}>
             Cadastre-se e receba
-            <Text fontSize={40} fontWeight={700}>
-              Condições especiais de lançamento
+            <Text fontSize={isMobile ? 25 : 40} fontWeight={700}>
+              Condições especiais <br /> de lançamento
             </Text>
           </Text>
         </Box>
@@ -26,6 +29,7 @@ export default function Register() {
             fontSize={16}
             border="2px solid #FFFFFF"
           />
+
           <Input
             type="e-mail"
             name="E-mail"
@@ -34,6 +38,7 @@ export default function Register() {
             fontSize={16}
             border="2px solid #FFFFFF"
           />
+
           <Input
             type="number"
             name="Telefone"
@@ -47,7 +52,8 @@ export default function Register() {
         <Box className={styles.contactWrapper}>
           <Box display="flex" alignItems="center">
             <input type="checkbox" />
-            <Text color="#000000" fontSize={14}>
+
+            <Text color="#000000" fontSize={isMobile ? 12 : 14}>
               Eu aceito ser contatado pela Artmann
             </Text>
           </Box>
@@ -61,7 +67,11 @@ export default function Register() {
         </Box>
 
         <Box className={styles.buttonWrapper}>
-          <Button fontSize={18} padding="15px 0 15px 0" borderRadius={50}>
+          <Button
+            fontSize={isMobile ? 14 : 18}
+            padding="15px 0 15px 0"
+            borderRadius={50}
+          >
             CADASTRAR
           </Button>
         </Box>
