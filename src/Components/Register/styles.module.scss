@@ -6,14 +6,26 @@
   height: 100%;
   padding: 150px 200px;
 
-  .textWrapper {
+  .contentWrapper {
     max-width: 400px;
+
+    .textWrapper {
+      margin-bottom: 20px;
+    }
 
     .inputWrapper {
       display: flex;
       flex-direction: column;
       gap: 10px;
       margin-top: 8px;
+      width: 100%;
+    }
+
+    .contactWrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 20px;
     }
 
     .buttonWrapper {
