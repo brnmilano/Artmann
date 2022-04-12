@@ -8,7 +8,7 @@ import { Box } from "@mui/material";
 import useIsMobile from "../../helpers/useIsMobile";
 
 export default function Header() {
-  const isMobile = useIsMobile({ size: 950 });
+  const isMobile = useIsMobile({ size: 450 });
 
   return (
     <Box className={styles.container}>
@@ -25,17 +25,17 @@ export default function Header() {
           />
 
           <Box className={styles.textWrapper}>
-            <Box marginLeft={isMobile ? 0 : 1}>
+            <Box className={styles.titleWrapper}>
               <Text
                 alignItems="center"
-                fontSize={isMobile ? 16 : 25}
+                fontSize={isMobile ? 11 : 25}
                 fontWeight={400}
               >
                 CHEGAMOS EM
               </Text>
             </Box>
 
-            <Heading fontSize={isMobile ? 25 : 44} fontWeight={700}>
+            <Heading fontSize={isMobile ? 18 : 44} fontWeight={700}>
               Balneário Camboríu
             </Heading>
           </Box>
