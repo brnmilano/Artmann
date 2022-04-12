@@ -12,7 +12,7 @@ export default function Register() {
     <Box className={styles.container}>
       <Box className={styles.contentWrapper}>
         <Box className={styles.textWrapper}>
-          <Text fontSize={isMobile ? 25 : 40}>
+          <Text fontWeight={400} fontSize={isMobile ? 25 : 40}>
             Cadastre-se e receba
             <Text fontSize={isMobile ? 25 : 40} fontWeight={700}>
               Condições especiais <br /> de lançamento
