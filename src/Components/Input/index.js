@@ -5,7 +5,6 @@ function Input({
   background = "none",
   padding,
   borderRadius,
-  label,
   name,
   placeholder,
   fontSize,
@@ -14,7 +13,6 @@ function Input({
 }) {
   return (
     <div className={styles.container}>
-      <label htmlFor={name}>{label}</label>
       <input
         placeholder={placeholder}
         type={type}
