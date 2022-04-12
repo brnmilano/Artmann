@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  padding: 60px 0 200px 0;
+  padding: 60px 30px 200px 30px;
 
   .logoWrapper {
     display: flex;
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     gap: 80px;
-    margin-top: 150px;
+    margin-top: 120px;
 
     .imageText {
       display: flex;
@@ -30,17 +30,97 @@
       }
 
       .textWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         max-width: 200px;
       }
     }
 
     .typeOneDevice {
-      display: flex;
-      align-items: center;
-      justify-content: center;
       max-height: 320px;
       height: 100%;
       margin-top: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    .logoWrapper {
+      .logoImage {
+        max-height: 50px;
+      }
+    }
+
+    .contentWrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin-top: 100px;
+
+      .imageText {
+        gap: 30px;
+
+        .philipsLog {
+          max-height: 128px;
+        }
+
+        .textWrapper {
+          gap: 5px;
+          max-width: 120px;
+        }
+      }
+
+      .typeOneDevice {
+        max-height: 280px;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    padding: 50px 30px;
+
+    .logoWrapper {
+      .logoImage {
+        max-height: 40px;
+      }
+    }
+
+    .contentWrapper {
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      margin-top: 80px;
+
+      .imageText {
+        gap: 30px;
+
+        div {
+          div {
+            font-size: 12px !important;
+          }
+          h1 {
+            font-size: 18px !important;
+          }
+        }
+
+        .philipsLog {
+          max-height: 60px;
+        }
+
+        .textWrapper {
+          max-width: 95px;
+        }
+      }
+
+      .typeOneDevice {
+        max-height: 235px;
+        margin-top: 0;
+      }
     }
   }
 }
