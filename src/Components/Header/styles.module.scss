@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  flex-direction: column;
+
+  .logoWrapper {
+    display: flex;
+    justify-content: center;
+
+    .logoImage {
+      max-height: 70px;
+      height: 100%;
+    }
+  }
+
+  .contentWrapper {
+    display: flex;
+    gap: 80px;
+    margin-top: 150px;
+
+    .imageText {
+      display: flex;
+      align-items: center;
+      gap: 37px;
+
+      .philipsLog {
+        max-height: 168px;
+        height: 100%;
+      }
+
+      .textWrapper {
+        max-width: 200px;
+      }
+    }
+
+    .typeOneDevice {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-height: 320px;
+      height: 100%;
+      margin-top: 22px;
+    }
+  }
+}
