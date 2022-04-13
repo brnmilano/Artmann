@@ -9,9 +9,11 @@ export default function Button({
   fontSize,
   fontWeight = "bold",
   onClick,
+  ...rest
 }) {
   return (
     <button
+      {...rest}
       className={styles.container}
       style={{
         backgroundColor,
