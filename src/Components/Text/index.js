@@ -6,6 +6,8 @@ export default function Text({
   fontSize = 16,
   fontWeight = 500,
   alignItems,
+  fontStyle = "normal",
+  textDecoration = "none",
 }) {
   return (
     <div
@@ -15,6 +17,8 @@ export default function Text({
         fontSize,
         fontWeight,
         alignItems,
+        fontStyle,
+        textDecoration,
       }}
     >
       {children}
