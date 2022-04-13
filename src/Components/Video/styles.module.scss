@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    margin: 0 auto;
+    padding: 0 25px;
+    width: 100%;
+
+    .videoWrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+      margin-bottom: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    .content {
+      padding: 25px 0;
+
+      .videoWrapper {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 575px) {
+  .container {
+    .content {
+      .videoWrapper {
+        margin-top: 7px;
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
