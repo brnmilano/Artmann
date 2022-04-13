@@ -16,6 +16,10 @@
 
       .textWrapper {
         margin-bottom: 20px;
+
+        span {
+          font-weight: bold;
+        }
       }
 
       .inputWrapper {
@@ -74,7 +78,7 @@
         }
 
         .contactText {
-          max-width: 350px;
+          max-width: 340px;
         }
 
         .buttonWrapper {
