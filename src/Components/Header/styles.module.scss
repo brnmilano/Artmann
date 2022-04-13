@@ -27,131 +27,85 @@
     .imageText {
       display: flex;
       align-items: center;
+      justify-content: center;
+      width: 100%;
 
       > * {
         &:not(:first-child) {
-          margin-left: 37px;
+          margin-left: 70px;
         }
       }
 
-      .philipsLog {
-        max-height: 168px;
-        height: 100%;
+      .imageWrapper {
+        max-width: 365px;
+        .stacksImage {
+          height: 320px;
+        }
       }
 
       .textWrapper {
-        display: flex;
-        flex-direction: column;
-        max-width: 200px;
+        max-width: 365px;
 
-        > * {
-          &:not(:first-child) {
-            margin-top: 10px;
-          }
-        }
-
-        .titleWrapper {
-          margin-left: 10px;
+        span {
+          color: #fab823;
+          font-weight: bold;
         }
       }
-    }
-
-    .typeOneDevice {
-      max-height: 320px;
-      height: 100%;
-      margin-top: 22px;
     }
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 660px) {
   .container {
-    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 30px 100px 30px;
+
     .logoWrapper {
+      display: flex;
+      justify-content: center;
+
       .logoImage {
         max-height: 50px;
+        height: 100%;
       }
     }
 
     .contentWrapper {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 100px;
+      display: flex;
+      justify-content: center;
+      margin-top: 70px;
 
       > * {
         &:not(:first-child) {
-          margin-left: 30px;
+          margin-left: 50px;
         }
       }
 
       .imageText {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
         > * {
           &:not(:first-child) {
-            margin-left: 30px;
+            margin-left: 0;
+            margin-top: 50px;
           }
         }
 
-        .philipsLog {
-          max-height: 168px;
+        .imageWrapper {
+          .stacksImage {
+            height: 250px;
+          }
         }
 
         .textWrapper {
-          max-width: 190px;
-
-          > * {
-            &:not(:first-child) {
-              margin-top: 5px;
-            }
-          }
+          max-width: 365px;
+          text-align: center;
         }
-      }
-
-      .typeOneDevice {
-        max-height: 280px;
-        margin-top: 0;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 450px) {
-  .container {
-    padding: 50px 30px;
-
-    .logoWrapper {
-      .logoImage {
-        max-height: 40px;
-      }
-    }
-
-    .contentWrapper {
-      flex-direction: column;
-      align-items: center;
-      margin-top: 80px;
-
-      > * {
-        &:not(:first-child) {
-          margin-left: 0;
-        }
-      }
-
-      .imageText {
-        .philipsLog {
-          max-height: 70px;
-        }
-
-        .textWrapper {
-          max-width: 95px;
-
-          .titleWrapper {
-            margin-left: 2px;
-          }
-        }
-      }
-
-      .typeOneDevice {
-        max-height: 235px;
-        margin-top: 0;
       }
     }
   }

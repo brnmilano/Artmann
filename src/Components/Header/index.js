@@ -1,14 +1,12 @@
 import logotype from "./Assets/logotype.png";
-import typeOneDevice from "./Assets/typeOneDevice.png";
-import philipsLog from "./Assets/philipsLog.png";
 import styles from "./styles.module.scss";
 import Text from "../Text";
-import Heading from "../Heading";
 import { Box } from "@mui/material";
 import useIsMobile from "../../helpers/useIsMobile";
+import Stacks from "./Assets/stacks.png";
 
 export default function Header() {
-  const isMobile = useIsMobile({ size: 450 });
+  const isMobile = useIsMobile({ size: 660 });
 
   return (
     <Box className={styles.container}>
@@ -18,34 +16,16 @@ export default function Header() {
 
       <Box className={styles.contentWrapper}>
         <Box className={styles.imageText}>
-          <img
-            className={styles.philipsLog}
-            src={philipsLog}
-            alt="Logo Philips"
-          />
+          <Box className={styles.imageWrapper}>
+            <img className={styles.stacksImage} src={Stacks} alt="Pilhas" />
+          </Box>
 
           <Box className={styles.textWrapper}>
-            <Box className={styles.titleWrapper}>
-              <Text
-                alignItems="center"
-                fontSize={isMobile ? 11 : 25}
-                fontWeight={400}
-              >
-                CHEGAMOS EM
-              </Text>
-            </Box>
-
-            <Heading fontSize={isMobile ? 18 : 44} fontWeight={700}>
-              Balneário Camboríu
-            </Heading>
+            <Text fontSize={isMobile ? 26 : 40}>
+              Pilhas com valor de <span>R$10</span> para quem se cadastrar.
+            </Text>
           </Box>
         </Box>
-
-        <img
-          className={styles.typeOneDevice}
-          src={typeOneDevice}
-          alt="Aparelho Auditivo"
-        />
       </Box>
     </Box>
   );
