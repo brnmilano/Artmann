@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 130px 25px;
+  margin: 0 auto;
+
+  > * {
+    &:not(:first-child) {
+      margin-left: 150px;
+    }
+  }
+
+  .textWrapper {
+    > * {
+      &:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+
+    .textEndereco {
+      max-width: 280px;
+    }
+
+    .textHorarios {
+      max-width: 380px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 60px 25px 100px 25px;
+    text-align: center;
+
+    > * {
+      &:not(:first-child) {
+        margin-left: 0;
+        margin-top: 50px;
+      }
+    }
+
+    .textWrapper {
+      line-height: 20px;
+      > * {
+        &:not(:first-child) {
+          margin-top: 25px;
+        }
+      }
+
+      .textEndereco {
+        margin: 0 auto;
+        margin-top: 25px;
+      }
+
+      .textHorarios {
+        margin: 0 auto;
+        margin-top: 25px;
+      }
+    }
+  }
+}

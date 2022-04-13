@@ -1,4 +1,5 @@
 import AboutUs from "../Components/AboutUs";
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Register from "../Components/Register";
 import SpecialConditions from "../Components/SpecialConditions";
@@ -17,6 +18,7 @@ export default function Home() {
       <Video />
       <Technology />
       <SpecialConditions />
+      <Footer />
     </div>
   );
 }

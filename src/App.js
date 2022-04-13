@@ -5,8 +5,3 @@ function App() {
 }
 
 export default App;
-
-// export const companyData = {
-//   telefone: "3123131",
-// };
-// {companyData.telefone}
