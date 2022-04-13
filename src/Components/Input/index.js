@@ -4,12 +4,12 @@ function Input({
   type,
   background = "none",
   padding,
-  borderRadius,
+  borderRadius = 50,
   name,
   placeholder,
-  fontSize,
+  fontSize = 16,
   width,
-  border,
+  border = "2px solid #FFFFFF",
 }) {
   return (
     <input
