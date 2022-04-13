@@ -21,7 +21,7 @@ export default function Register() {
   };
 
   return (
-    <form onSubmit={onSubmit} className={styles.form}>
+    <form id="Register" onSubmit={onSubmit} className={styles.form}>
       <Box className={styles.container}>
         <Box className={styles.contentWrapper}>
           <Box className={styles.textWrapper}>

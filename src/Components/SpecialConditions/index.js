@@ -7,12 +7,6 @@ import Button from "../Button";
 export default function SpecialConditions() {
   const isMobile = useIsMobile({ size: 680 });
 
-  const onSubmit = (event) => {
-    event.preventDefault();
-
-    console.log("Cadastrar usário");
-  };
-
   return (
     <Box className={styles.container}>
       <Box className={styles.contentWrapper}>
@@ -23,17 +17,18 @@ export default function SpecialConditions() {
         </Box>
       </Box>
 
-      <form onSubmit={onSubmit} className={styles.buttonWrapper}>
-        <Button
-          type="submit"
-          fontSize={18}
-          padding="15px 19px 15px 20px"
-          borderRadius={50}
-          color="#06172D"
-        >
-          CLIQUE AQUI
-        </Button>
-      </form>
+      <Box className={styles.buttonWrapper}>
+        <a href="#Register">
+          <Button
+            fontSize={18}
+            padding="15px 19px 15px 20px"
+            borderRadius={50}
+            color="#06172D"
+          >
+            CLIQUE AQUI
+          </Button>
+        </a>
+      </Box>
     </Box>
   );
 }
