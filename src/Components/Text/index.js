@@ -1,3 +1,5 @@
+import styles from "./styles.module.scss";
+
 export default function Text({
   children,
   color = "#FFFFFF",
@@ -7,6 +9,7 @@ export default function Text({
 }) {
   return (
     <div
+      className={styles.container}
       style={{
         color,
         fontSize,
