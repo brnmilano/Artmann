@@ -1,0 +1,19 @@
+.values-container {
+  .rec.rec-dot_active {
+    background-color: #fab823;
+    box-shadow: none;
+  }
+}
+
+.rec.rec-dot {
+  background-color: white;
+  box-shadow: none;
+}
+
+.rec.rec-dot:focus {
+  box-shadow: none;
+}
+
+.rec.rec-dot:hover {
+  box-shadow: none;
+}
