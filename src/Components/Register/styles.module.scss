@@ -4,7 +4,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 780px;
-  padding: 130px 0;
+  padding: 130px 50px;
 
   .container {
     max-width: 1180px;
@@ -92,7 +92,7 @@
 
 @media screen and (max-width: 950px) {
   .form {
-    padding: 150px;
+    padding: 150px 0;
     height: 754px;
 
     .container {
@@ -152,6 +152,17 @@
           }
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .form {
+    background-image: url("./Assets//oneBackgroundMobile.png");
+    height: 754px;
+
+    .contactText {
+      max-width: 275px;
     }
   }
 }
