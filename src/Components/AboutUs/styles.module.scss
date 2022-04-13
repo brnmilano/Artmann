@@ -1,0 +1,87 @@
+.container {
+  background-color: #ffffff;
+  padding: 80px 0;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 25px;
+
+    .storeImage {
+      height: 350px;
+    }
+
+    .textWrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 375px;
+
+      > * {
+        &:not(:first-child) {
+          margin-top: 28px;
+        }
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .deviceImage {
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .container {
+    padding: 75px 0;
+
+    .content {
+      flex-direction: column;
+      padding: 0 40px;
+
+      > * {
+        &:not(:first-child) {
+          margin-top: 50px;
+        }
+      }
+
+      .storeImage {
+        height: 320px;
+      }
+
+      .textWrapper {
+        max-width: 295px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .container {
+    padding: 50px 0;
+
+    .content {
+      flex-direction: column;
+      padding: 0 40px;
+
+      > * {
+        &:not(:first-child) {
+          margin-top: 50px;
+        }
+      }
+
+      .storeImage {
+        height: 300px;
+      }
+
+      .textWrapper {
+        max-width: 295px;
+      }
+    }
+  }
+}
