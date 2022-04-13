@@ -2,28 +2,39 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   background-color: #071f3f;
+  padding: 135px 25px;
 
   span {
     font-weight: bold;
   }
 
   .contentWrapper {
-    padding: 134px 25px;
     text-align: center;
+  }
 
-    .buttonWrapper {
-      max-width: 375px;
-      margin: 0 auto;
-      padding-top: 26px;
-    }
+  .buttonWrapper {
+    width: 100%;
+    max-width: 375px;
+    margin: 0 auto;
+    padding-top: 26px;
   }
 }
 
 @media screen and (max-width: 680px) {
   .container {
+    padding: 50px 35px;
+
     .contentWrapper {
-      padding: 50px 25px;
+      margin-bottom: 30px;
+      .textWrapper {
+        max-width: 200px;
+      }
+    }
+
+    .buttonWrapper {
+      padding-top: 10px;
     }
   }
 }

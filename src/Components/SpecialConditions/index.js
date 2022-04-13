@@ -16,24 +16,24 @@ export default function SpecialConditions() {
   return (
     <Box className={styles.container}>
       <Box className={styles.contentWrapper}>
-        <Box>
+        <Box className={styles.textWrapper}>
           <Text fontSize={isMobile ? 20 : 32}>
             Cadastre-se e receba <span>condições especiais </span>
           </Text>
         </Box>
-
-        <form onSubmit={onSubmit} className={styles.buttonWrapper}>
-          <Button
-            type="submit"
-            fontSize={isMobile ? 14 : 18}
-            padding="15px 19px 15px 20px"
-            borderRadius={50}
-            color="#06172D"
-          >
-            CLIQUE AQUI
-          </Button>
-        </form>
       </Box>
+
+      <form onSubmit={onSubmit} className={styles.buttonWrapper}>
+        <Button
+          type="submit"
+          fontSize={18}
+          padding="15px 19px 15px 20px"
+          borderRadius={50}
+          color="#06172D"
+        >
+          CLIQUE AQUI
+        </Button>
+      </form>
     </Box>
   );
 }
