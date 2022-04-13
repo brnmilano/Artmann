@@ -12,21 +12,20 @@ function Input({
   border,
 }) {
   return (
-    <div className={styles.container}>
-      <input
-        placeholder={placeholder}
-        type={type}
-        id={name}
-        style={{
-          background,
-          padding,
-          borderRadius,
-          fontSize,
-          width,
-          border,
-        }}
-      />
-    </div>
+    <input
+      className={styles.input}
+      placeholder={placeholder}
+      type={type}
+      id={name}
+      style={{
+        background,
+        padding,
+        borderRadius,
+        fontSize,
+        width,
+        border,
+      }}
+    />
   );
 }
 
