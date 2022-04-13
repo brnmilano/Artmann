@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #071f3f;
+
+  span {
+    font-weight: bold;
+  }
+
+  .contentWrapper {
+    padding: 134px 25px;
+    text-align: center;
+
+    .buttonWrapper {
+      max-width: 375px;
+      margin: 0 auto;
+      padding-top: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    .contentWrapper {
+      padding: 50px 25px;
+    }
+  }
+}

@@ -1,6 +1,7 @@
 import AboutUs from "../Components/AboutUs";
 import Header from "../Components/Header";
 import Register from "../Components/Register";
+import SpecialConditions from "../Components/SpecialConditions";
 import Technology from "../Components/Technology";
 import Values from "../Components/Values";
 import Video from "../Components/Video";
@@ -15,6 +16,7 @@ export default function Home() {
       <Values />
       <Video />
       <Technology />
+      <SpecialConditions />
     </div>
   );
 }
