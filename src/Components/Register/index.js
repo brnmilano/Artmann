@@ -35,27 +35,29 @@ export default function Register() {
 
           <Box className={styles.inputWrapper}>
             <Input
-              type="text"
               name="Nome"
               placeholder="Nome"
               value={name}
               onChange={(event) => setName(event.target.value)}
+              required
             />
 
             <Input
-              type="e-mail"
+              type="email"
               name="E-mail"
               placeholder="E-mail"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
+              required
             />
 
             <Input
-              type="number"
+              type="tel"
               name="Telefone"
               placeholder="Telefone"
               value={cellphone}
               onChange={(event) => setCellphone(event.target.value)}
+              required
             />
           </Box>
 
