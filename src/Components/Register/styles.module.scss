@@ -1,101 +1,150 @@
-.container {
+.form {
   background-image: url("./Assets/oneBackground.png");
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 100%;
-  padding: 130px 200px;
+  padding: 130px 0;
 
-  .contentWrapper {
-    max-width: 400px;
-    width: 100%;
-
-    .textWrapper {
-      margin-bottom: 20px;
-    }
-
-    .inputWrapper {
-      display: flex;
-      flex-direction: column;
-      margin-top: 8px;
-      width: 100%;
-
-      > * {
-        &:not(:first-child) {
-          margin-top: 10px;
-        }
-      }
-    }
-
-    .contactWrapper {
-      display: flex;
-      flex-direction: column;
-      margin-top: 20px;
-
-      > * {
-        &:not(:first-child) {
-          margin-top: 10px;
-        }
-      }
-    }
-
-    .buttonWrapper {
-      width: 100%;
-      margin-top: 20px;
-    }
-  }
-}
-
-@media screen and (max-width: 950px) {
   .container {
-    display: flex;
-    justify-content: center;
-    padding: 150px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 50px;
 
     .contentWrapper {
+      max-width: 400px;
+      width: 100%;
+
+      .textWrapper {
+        margin-bottom: 20px;
+      }
+
       .inputWrapper {
-        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 8px;
+        width: 100%;
 
         > * {
           &:not(:first-child) {
-            margin-top: 20px;
+            margin-top: 10px;
           }
         }
       }
 
       .contactWrapper {
         display: flex;
-        flex-direction: column;
         margin-top: 20px;
-      }
+        margin-bottom: 20px;
 
-      .buttonWrapper {
-        width: 100%;
-        margin-top: 20px;
+        .checkboxWrapper {
+          display: inline-block;
+          margin-right: 20px;
+
+          input {
+            display: none;
+
+            & ~ label.checkbox {
+              display: inline-block;
+              position: relative;
+              height: 20px;
+              width: 20px;
+              border: 2px solid #fff;
+              border-radius: 50%;
+              user-select: none;
+
+              &:after {
+                content: "";
+                opacity: 0;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: #fff;
+                transition: opacity 0.1s ease-out;
+              }
+            }
+
+            &:checked ~ label.checkbox:after {
+              opacity: 1;
+            }
+          }
+        }
+
+        .contactText {
+          max-width: 350px;
+        }
+
+        .buttonWrapper {
+          width: 100%;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .form {
+    padding: 150px;
+
+    .container {
+      padding: 0 25px;
+      .contentWrapper {
+        .inputWrapper {
+          margin-top: 30px;
+
+          > * {
+            &:not(:first-child) {
+              margin-top: 20px;
+            }
+          }
+        }
+
+        .contactWrapper {
+          margin-top: 20px;
+        }
+
+        .buttonWrapper {
+          width: 100%;
+          margin-top: 20px;
+        }
       }
     }
   }
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 100px 0;
+  .form {
+    padding: 10px 0px 0;
 
-    .contentWrapper {
-      padding: 0 35px;
+    .container {
+      .contentWrapper {
+        padding: 0 35px;
 
-      .textWrapper {
-        text-align: center;
-      }
+        .textWrapper {
+          text-align: center;
+        }
 
-      .contactWrapper {
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-      }
+        .contactWrapper {
+          .checkboxWrapper {
+            margin-right: 10px;
 
-      .buttonWrapper {
-        width: 100%;
-        margin-top: 20px;
+            .contactWrapper {
+              display: flex;
+              flex-direction: column;
+              margin-top: 20px;
+            }
+
+            .buttonWrapper {
+              width: 100%;
+              margin-top: 20px;
+            }
+          }
+        }
       }
     }
   }
