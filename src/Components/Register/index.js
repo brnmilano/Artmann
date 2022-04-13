@@ -70,7 +70,10 @@ export default function Register() {
             </Box>
 
             <Box className={styles.contactText}>
-              <Text color="#5D4100" fontSize={isMobile ? 12 : 14}>
+              <Text
+                color={isMobile ? "#FFFFFF" : "#5D4100"}
+                fontSize={isMobile ? 12 : 14}
+              >
                 Eu aceito ser contatado pela Artmann por um dos meios informados
                 neste formulário para futuras ações promocionais, lançamentos de
                 produtos e convites para checkup auditivo pelo período de 24
