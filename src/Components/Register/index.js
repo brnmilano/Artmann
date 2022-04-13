@@ -14,8 +14,14 @@ export default function Register() {
   const [cellphone, setCellphone] = useState("");
   const [acceptTerms, setAcceptTerms] = useState(false);
 
+  const onSubmit = (event) => {
+    event.preventDefault();
+
+    console.log("cadastrar o usuário");
+  };
+
   return (
-    <form className={styles.form}>
+    <form onSubmit={onSubmit} className={styles.form}>
       <Box className={styles.container}>
         <Box className={styles.contentWrapper}>
           <Box className={styles.textWrapper}>
@@ -32,9 +38,6 @@ export default function Register() {
               type="text"
               name="Nome"
               placeholder="Nome"
-              borderRadius={50}
-              fontSize={16}
-              border="2px solid #FFFFFF"
               value={name}
               onChange={(event) => setName(event.target.value)}
             />
@@ -43,9 +46,6 @@ export default function Register() {
               type="e-mail"
               name="E-mail"
               placeholder="E-mail"
-              borderRadius={50}
-              fontSize={16}
-              border="2px solid #FFFFFF"
               value={email}
               onChange={(event) => setEmail(event.target.value)}
             />
@@ -54,9 +54,6 @@ export default function Register() {
               type="number"
               name="Telefone"
               placeholder="Telefone"
-              borderRadius={50}
-              fontSize={16}
-              border="2px solid #FFFFFF"
               value={cellphone}
               onChange={(event) => setCellphone(event.target.value)}
             />
@@ -85,6 +82,7 @@ export default function Register() {
 
           <Box className={styles.buttonWrapper}>
             <Button
+              type="submit"
               fontSize={isMobile ? 14 : 18}
               padding="15px 0 15px 0"
               borderRadius={50}
