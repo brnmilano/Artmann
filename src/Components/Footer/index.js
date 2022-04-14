@@ -29,15 +29,18 @@ export default function Footer() {
       </Box>
 
       <Box className={styles.textWrapper}>
-        <Text fontSize={14}>Telefone / WhatsApp: {companyData.telefone}</Text>
+        <Text fontSize={14}>
+          Telefone / WhatsApp:{" "}
+          <a href="tel:+554738420312">{companyData.telefone}</a>
+        </Text>
+
         <Text fontSize={14} fontWeight={700}>
           Horário de atendimento
         </Text>
+
         <Box className={styles.textHorarios}>
-          <Text>
-            Segunda a Sexta das {companyData.horarioSemana} <br /> Sábado das{" "}
-            {companyData.horarioSabado}
-          </Text>
+          <Text>Segunda a Sexta das {companyData.horarioSemana}</Text>
+          <Text>Sábado das {companyData.horarioSabado}</Text>
         </Box>
       </Box>
 
