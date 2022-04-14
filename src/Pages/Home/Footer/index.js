@@ -1,6 +1,6 @@
 import { Box } from "@mui/system";
 import styles from "./styles.module.scss";
-import Text from "../Text";
+import Text from "../../../Components/Text";
 import companyData from "./CompanyData";
 
 export default function Footer() {

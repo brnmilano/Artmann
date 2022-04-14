@@ -1,9 +1,9 @@
 import { Box } from "@mui/system";
 import styles from "./styles.module.scss";
-import Text from "../Text";
-import useIsMobile from "../../helpers/useIsMobile";
-import Button from "../Button";
-import FadeInWhenVisible from "../Animations/FadeInWhenVisible";
+import Text from "../../../Components/Text";
+import useIsMobile from "../../../helpers/useIsMobile";
+import Button from "../../../Components/Button";
+import FadeInWhenVisible from "../../../Components/Animations/FadeInWhenVisible";
 
 export default function SpecialConditions() {
   const isMobile = useIsMobile({ size: 680 });

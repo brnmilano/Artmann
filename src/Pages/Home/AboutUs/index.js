@@ -1,11 +1,11 @@
 import { Box } from "@mui/system";
 import styles from "./styles.module.scss";
 import Store from "./Assets/store.png";
-import Text from "../Text";
+import Text from "../../../Components/Text";
 import typeTwoDevice from "./Assets/typeTwoDevice.png";
-import useIsMobile from "../../helpers/useIsMobile";
-import FadeInFromRightWhenVisible from "../Animations/FadeInFromRightWhenVisible";
-import FadeInFromLeftWhenVisible from "../Animations/FadeInFromLeftWhenVisible";
+import useIsMobile from "../../../helpers/useIsMobile";
+import FadeInFromRightWhenVisible from "../../../Components/Animations/FadeInFromRightWhenVisible";
+import FadeInFromLeftWhenVisible from "../../../Components/Animations/FadeInFromLeftWhenVisible";
 
 export default function AboutUs() {
   const isMobile = useIsMobile({ size: 1100 });

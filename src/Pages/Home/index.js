@@ -1,11 +1,11 @@
-import AboutUs from "../../Components/AboutUs";
-import Footer from "../../Components/Footer";
-import Header from "../../Components/Header";
-import Register from "../../Components/Register";
-import SpecialConditions from "../../Components/SpecialConditions";
-import Technology from "../../Components/Technology";
-import Values from "../../Components/Values";
-import Video from "../../Components/Video";
+import Header from "./Header";
+import AboutUs from "./AboutUs";
+import Register from "./Register";
+import Values from "./Values";
+import Video from "./Video";
+import Technology from "./Technology";
+import SpecialConditions from "./SpecialConditions";
+import Footer from "./Footer";
 import styles from "./styles.module.scss";
 
 export default function Home() {

@@ -1,7 +1,7 @@
 import { Box } from "@mui/system";
 import styles from "./styles.module.scss";
-import Text from "../Text";
-import useIsMobile from "../../helpers/useIsMobile";
+import Text from "../../../Components/Text";
+import useIsMobile from "../../../helpers/useIsMobile";
 
 export default function Technology() {
   const isMobile = useIsMobile({ size: 768 });

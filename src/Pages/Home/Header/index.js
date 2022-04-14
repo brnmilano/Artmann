@@ -1,12 +1,12 @@
+import { Box } from "@mui/material";
 import logotype from "./Assets/logotype.png";
 import styles from "./styles.module.scss";
-import Text from "../Text";
-import { Box } from "@mui/material";
-import useIsMobile from "../../helpers/useIsMobile";
+import Text from "../../../Components/Text";
+import useIsMobile from "../../../helpers/useIsMobile";
 import Stacks from "./Assets/stacks.png";
-import Button from "../Button";
+import Button from "../../../Components/Button";
 import Wpp from "./Assets/wpp.png";
-import FadeInWhenVisible from "../Animations/FadeInWhenVisible";
+import FadeInWhenVisible from "../../../Components/Animations/FadeInWhenVisible";
 
 export default function Header() {
   const isMobile = useIsMobile({ size: 660 });

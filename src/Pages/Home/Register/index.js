@@ -1,10 +1,10 @@
 import { Box } from "@mui/system";
-import Button from "../Button";
-import Input from "../Input";
-import Text from "../Text";
+import Button from "../../../Components/Button";
+import Input from "../../../Components/Input";
+import Text from "../../../Components/Text";
 import styles from "./styles.module.scss";
 import Captcha from "./Assets/captcha.png";
-import useIsMobile from "../../helpers/useIsMobile";
+import useIsMobile from "../../../helpers/useIsMobile";
 import { useState } from "react";
 
 export default function Register() {

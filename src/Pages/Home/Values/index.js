@@ -1,8 +1,8 @@
 import { Box } from "@mui/system";
 import styles from "./styles.module.scss";
-import Text from "../Text";
+import Text from "../../../Components/Text";
 import Carousel from "react-elastic-carousel";
-import FadeInWhenVisible from "../Animations/FadeInWhenVisible";
+import FadeInWhenVisible from "../../../Components/Animations/FadeInWhenVisible";
 
 export default function Values() {
   const items = [
