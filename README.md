@@ -9,6 +9,6 @@ No diretório do projeto, você pode executar:
 ### `npm start`
 
 Executa o aplicativo no modo de desenvolvimento.\
-Para abrir o [http://localhost:3000](http://localhost:3000) no seu navegador.
+E abre o [http://localhost:3000](http://localhost:3000) no seu navegador.
 
-A página será recarregada quando você fizer alterações.\
+A página será recarregada quando você fizer alterações.
