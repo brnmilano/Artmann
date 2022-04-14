@@ -4,6 +4,8 @@ import Text from "../Text";
 import { Box } from "@mui/material";
 import useIsMobile from "../../helpers/useIsMobile";
 import Stacks from "./Assets/stacks.png";
+import Button from "../Button";
+import Wpp from "./Assets/wpp.png";
 
 export default function Header() {
   const isMobile = useIsMobile({ size: 660 });
@@ -22,10 +24,28 @@ export default function Header() {
 
           <Box className={styles.textWrapper}>
             <Text fontSize={isMobile ? 26 : 40}>
-              Pilhas com valor de <span>R$10</span> para quem se cadastrar.
+              Cadastre-se e compre pilhas por <span>R$ 10</span>.
             </Text>
           </Box>
         </Box>
+      </Box>
+
+      <Box className={styles.whatsAppButton}>
+        <a
+          href="https://api.whatsapp.com/send?phone=554738420312&text=Eu%20fa%C3%A7o%20parte%20da%20ClickWeb%20%3A)"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button
+            fontWeight={400}
+            backgroundColor="#00E676"
+            color="#FFFFFF"
+            borderRadius={100}
+          >
+            <img src={Wpp} alt="" />
+            FALE CONOSCO
+          </Button>
+        </a>
       </Box>
     </Box>
   );
