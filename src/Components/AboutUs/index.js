@@ -4,6 +4,8 @@ import Store from "./Assets/store.png";
 import Text from "../Text";
 import typeTwoDevice from "./Assets/typeTwoDevice.png";
 import useIsMobile from "../../helpers/useIsMobile";
+import FadeInFromRightWhenVisible from "../Animations/FadeInFromRightWhenVisible";
+import FadeInFromLeftWhenVisible from "../Animations/FadeInFromLeftWhenVisible";
 
 export default function AboutUs() {
   const isMobile = useIsMobile({ size: 1100 });
@@ -11,9 +13,11 @@ export default function AboutUs() {
   return (
     <Box className={styles.container}>
       <Box className={styles.content}>
-        <Box className={styles.imageStoreWrapper}>
-          <img className={styles.storeImage} src={Store} alt="Loja Philips" />
-        </Box>
+        <FadeInFromLeftWhenVisible>
+          <Box className={styles.imageStoreWrapper}>
+            <img className={styles.storeImage} src={Store} alt="Loja Philips" />
+          </Box>
+        </FadeInFromLeftWhenVisible>
 
         <Box className={styles.textWrapper}>
           <Text color="#15355E" fontWeight={500} fontSize={isMobile ? 18 : 23}>
@@ -37,13 +41,13 @@ export default function AboutUs() {
           </Text>
         </Box>
 
-        <Box>
+        <FadeInFromRightWhenVisible>
           <img
             className={styles.deviceImage}
             src={typeTwoDevice}
             alt="Aparelho auditivo"
           />
-        </Box>
+        </FadeInFromRightWhenVisible>
       </Box>
     </Box>
   );

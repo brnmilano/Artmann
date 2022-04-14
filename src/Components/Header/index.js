@@ -6,15 +6,18 @@ import useIsMobile from "../../helpers/useIsMobile";
 import Stacks from "./Assets/stacks.png";
 import Button from "../Button";
 import Wpp from "./Assets/wpp.png";
+import FadeInWhenVisible from "../Animations/FadeInWhenVisible";
 
 export default function Header() {
   const isMobile = useIsMobile({ size: 660 });
 
   return (
     <Box className={styles.container}>
-      <Box className={styles.logoWrapper}>
-        <img className={styles.logoImage} src={logotype} alt="Logo" />
-      </Box>
+      <FadeInWhenVisible>
+        <Box className={styles.logoWrapper}>
+          <img className={styles.logoImage} src={logotype} alt="Logo" />
+        </Box>
+      </FadeInWhenVisible>
 
       <Box className={styles.contentWrapper}>
         <Box className={styles.imageText}>

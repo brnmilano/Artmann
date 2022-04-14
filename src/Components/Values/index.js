@@ -2,6 +2,7 @@ import { Box } from "@mui/system";
 import styles from "./styles.module.scss";
 import Text from "../Text";
 import Carousel from "react-elastic-carousel";
+import FadeInWhenVisible from "../Animations/FadeInWhenVisible";
 
 export default function Values() {
   const items = [
@@ -22,20 +23,22 @@ export default function Values() {
   return (
     <>
       <Box className={styles.container}>
-        <Box className={styles.desktopWrapper}>
-          {items.map((item, index) => {
-            return (
-              <Box className={styles.imageWrapper}>
-                <img
-                  className={styles.image}
-                  src={item.imagem}
-                  alt={item.name}
-                />
-                <Text fontSize={32}>{item.name}</Text>
-              </Box>
-            );
-          })}
-        </Box>
+        <FadeInWhenVisible>
+          <Box className={styles.desktopWrapper}>
+            {items.map((item, index) => {
+              return (
+                <Box className={styles.imageWrapper}>
+                  <img
+                    className={styles.image}
+                    src={item.imagem}
+                    alt={item.name}
+                  />
+                  <Text fontSize={32}>{item.name}</Text>
+                </Box>
+              );
+            })}
+          </Box>
+        </FadeInWhenVisible>
       </Box>
 
       <Box className={`${styles.mobileWrapper} values-container`}>
