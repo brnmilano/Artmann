@@ -11,11 +11,9 @@ export default function Technology() {
       <Box className={styles.textWrapper}>
         <Text fontSize={isMobile ? 19 : 36}>
           A audição é conexão: com o mundo e com você.
-          <span>
-            {" "}
-            <br />
-            Conte com a mais alta tecnologia em aparelhos auditivos.
-          </span>
+        </Text>
+        <Text fontSize={isMobile ? 18 : 36} fontWeight={700}>
+          Conte com a mais alta tecnologia em aparelhos auditivos.
         </Text>
       </Box>
     </Box>

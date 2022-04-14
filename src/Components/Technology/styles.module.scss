@@ -7,14 +7,16 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 150px 0;
-
-  span {
-    font-weight: bold;
-  }
+  padding: 330px 0;
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 250px 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
   .container {
     background-image: url("./Assets/twoBackgroundMobile.png");
     height: 375px;
@@ -22,11 +24,6 @@
 
     .textWrapper {
       max-width: 180px;
-
-      span {
-        font-weight: bold;
-        font-size: 18px;
-      }
     }
   }
 }
