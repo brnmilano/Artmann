@@ -3,11 +3,12 @@ import Button from "../Button";
 import Input from "../Input";
 import Text from "../Text";
 import styles from "./styles.module.scss";
+import Captcha from "./Assets/captcha.png";
 import useIsMobile from "../../helpers/useIsMobile";
 import { useState } from "react";
 
 export default function Register() {
-  const isMobile = useIsMobile({ size: 950 });
+  const isMobile = useIsMobile({ size: 768 });
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -26,7 +27,10 @@ export default function Register() {
         <Box className={styles.contentWrapper}>
           <Box className={styles.textWrapper}>
             <Text fontWeight={400} fontSize={isMobile ? 25 : 40}>
-              Cadastre-se e receba <span>condições especiais</span>
+              Cadastre-se e receba
+            </Text>
+            <Text fontSize={isMobile ? 25 : 40} fontWeight={700}>
+              condições especiais
             </Text>
           </Box>
 
@@ -80,6 +84,10 @@ export default function Register() {
                 meses após o preenchimento desse cadastro.
               </Text>
             </Box>
+          </Box>
+
+          <Box marginBottom={3} display="flex" justifyContent="center">
+            <img src={Captcha} alt="Google Captcha" />
           </Box>
 
           <Box className={styles.buttonWrapper}>
