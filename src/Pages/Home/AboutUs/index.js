@@ -22,7 +22,7 @@ export default function AboutUs() {
         <Box className={styles.textWrapper}>
           <Text color="#15355E" fontWeight={500} fontSize={isMobile ? 18 : 23}>
             Nossa empresa é o resultado da união de
-            <span> profissionais especilistas na área de fonoaudiologia</span>,
+            <span> profissionais especialistas na área de fonoaudiologia</span>,
             em busca de proporcionar a
             <span> melhor experiência na vida das pessoas através do som.</span>
           </Text>
